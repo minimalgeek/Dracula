@@ -5,15 +5,9 @@ public class ShapeShiftController : MonoBehaviour {
 
     public GameObject shapePanel;
     public enum Shapes {Shape1, Shape2, Shape3, Shape4, Shape5, Shape6};
+    Shapes lastShape;
+    Shapes wantedShape=Shapes.Shape1;
 
-    Shapes wantedShape;
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
 	void Update () {
         if (Input.GetButtonDown("Fire2"))
         {
@@ -30,7 +24,18 @@ public class ShapeShiftController : MonoBehaviour {
 
     public void SetWantedShape(int n)
     {
+        lastShape = wantedShape;
         wantedShape = (Shapes)n;
+
+        foreach (Recolor rc in shapePanel.GetComponentsInChildren<Recolor>())
+        {
+            rc.StopHightLight();
+        }     
+    }
+
+    public void KeepShape()
+    {
+        wantedShape = lastShape;
     }
 
     void ShapeShift()
