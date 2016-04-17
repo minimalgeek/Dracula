@@ -30,9 +30,14 @@ public class GameController : MonoBehaviour {
     //    tasksList[0].Activate();
     //}
 
-    public void GameOver()
+    public void StartGameOver()
+    {
+        Invoke("GameOver", 5);
+        Time.timeScale = 0.1f;
+    }
+
+   void GameOver()
     {
         gameOverPanel.SetActive(true);
-        Time.timeScale = 0.1f;
     }
 }

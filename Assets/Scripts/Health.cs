@@ -11,8 +11,11 @@ public class Health : MonoBehaviour {
         health -= dmg;
         if (health<=0)
         {
-            GameController.instance.GameOver();
+            GetComponentInChildren<Animator>().SetTrigger("Die");
+            GameController.instance.StartGameOver();
         }
     }
+
+
 
 }

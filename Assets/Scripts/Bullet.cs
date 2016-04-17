@@ -9,4 +9,9 @@ public class Bullet : MonoBehaviour {
     {
         c.GetComponent<Health>().DamageTaken(dmg);
     }
+
+   void Start()
+    {
+        Destroy(gameObject, 10);
+    }
 }
