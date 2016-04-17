@@ -7,12 +7,13 @@ public class ShapeShiftController : MonoBehaviour {
     public GameObject shapePanel;
     public enum Shapes {Shape1, Shape2, Shape3, Shape4, Shape5, Shape6};
     Shapes wantedShape=Shapes.Shape1;
-    Shapes currentShape = Shapes.Shape1;
+    public Shapes currentShape = Shapes.Shape1;
     public int shapeShiftCost=1;
     public int maxMana=12;
+    public int currentMana;
     public Image[] icons;
     public Color highLightColor;
-    public GameObject[] shapes;
+    public GameObject[] characters;
     public GameObject effect;
 
 
@@ -49,16 +50,27 @@ public class ShapeShiftController : MonoBehaviour {
     {
         if (wantedShape != currentShape)
         {
-            if (maxMana >= shapeShiftCost)
+            if (currentMana >= shapeShiftCost)
             {
+               
+                currentMana -= shapeShiftCost;
                 gameObject.layer = LayerMask.NameToLayer(wantedShape.ToString());
-                shapes[(int)wantedShape].SetActive(true);
-                shapes[(int)currentShape].SetActive(false);
+                characters[(int)wantedShape].SetActive(true);
+                characters[(int)currentShape].SetActive(false);
                 if (effect!=null)
                 {
                     Instantiate(effect, transform.position, transform.rotation);
                 }
+                currentShape = wantedShape;
             }
+        }
+    }
+    public void AddMana(int mana)
+    {
+        currentMana += mana;
+        if (currentMana>maxMana)
+        {
+            currentMana = maxMana;
         }
     }
 }

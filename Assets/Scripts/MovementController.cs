@@ -3,30 +3,31 @@ using System.Collections;
 
 public class MovementController : MonoBehaviour
 {
-
     public float speed = 6.0F;
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
     private Vector3 moveDirection = Vector3.zero;
     public float rotSpeed = 10;
     CharacterController cc;
+    ShapeShiftController ss;
     Animator anim;
     void Start()
     {
         cc = GetComponent<CharacterController>();
-        anim = GetComponentInChildren<Animator>();
+        ss = GetComponent<ShapeShiftController>();
     }
-    bool enable = false;
+    bool enable = true;
     void Update()
     {
-        if (anim.GetCurrentAnimatorStateInfo(0).IsTag("Start"))
-        {
-            enable = true;
-        }
-        if (anim.GetCurrentAnimatorStateInfo(0).IsTag("Stop"))
-        {
-            enable = false;
-        }
+        anim = GetComponentInChildren<Animator>(false);
+        //if (anim.GetCurrentAnimatorStateInfo(0).IsTag("Start"))
+        //{
+        //    enable = true;
+        //}
+        //if (anim.GetCurrentAnimatorStateInfo(0).IsTag("Stop"))
+        //{
+        //    enable = false;
+        //}
 
         if (enable)
         {
@@ -41,7 +42,6 @@ public class MovementController : MonoBehaviour
             {
                 float horizontal = Input.GetAxis("Horizontal");
                 float vertical = Input.GetAxis("Vertical");
-
                 //if (0!=Input.GetAxis("Horizontal"))
                 //{
                 //    moveDirection = transform.forward*Input.GetAxis("Horizontal"); 
@@ -69,37 +69,36 @@ public class MovementController : MonoBehaviour
 
                 if (horizontal > 0 && vertical < 0) //DS
                 {
-                    transform.GetChild(0).localRotation = Quaternion.Euler(new Vector3(0, -45, 0));
+                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, -45, 0));
                 }
                 else if (horizontal > 0 && vertical > 0) //DW
                 {
-                    transform.GetChild(0).localRotation = Quaternion.Euler(new Vector3(0, 225, 0));
+                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, 225, 0));
                 }
                 else if (horizontal > 0 && vertical == 0) //A
                 {
-                    transform.GetChild(0).localRotation = Quaternion.Euler(new Vector3(0, -90, 0));
+                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, -90, 0));
                 }
                 else if (horizontal < 0 && vertical < 0) //AS
                 {
-                    transform.GetChild(0).localRotation = Quaternion.Euler(new Vector3(0, 45, 0));
+                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, 45, 0));
                 }
                 else if (horizontal < 0 && vertical > 0) //AW
                 {
-                    transform.GetChild(0).localRotation = Quaternion.Euler(new Vector3(0, 135, 0));
+                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, 135, 0));
                 }
                 else if (horizontal < 0 && vertical == 0) //D
                 {
-                    transform.GetChild(0).localRotation = Quaternion.Euler(new Vector3(0, 90, 0));
+                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, 90, 0));
                 }
                 else if (horizontal == 0 && vertical > 0)//W
                 {
-                    transform.GetChild(0).localRotation = Quaternion.Euler(new Vector3(0, 180, 0));
+                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, 180, 0));
                 }
                 else//S
                 {
-                    transform.GetChild(0).localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
+                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, 0, 0));
                 }
-               
             }
             moveDirection.y -= gravity * Time.deltaTime;
             cc.Move(moveDirection * Time.deltaTime);
