@@ -10,12 +10,12 @@ public class Spitter : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        InvokeRepeating("Fire", 1, cooldown);
+        InvokeRepeating("Fire", Random.Range(0.3f, 1f), cooldown);
 	}
 	
     public void Fire()
     {
        GameObject g= Instantiate(bullet, spawnPoint.position, spawnPoint.rotation)as GameObject;
-        g.GetComponent<Rigidbody>().AddForce(g.transform.forward*bulletSpeed);
+       //g.GetComponent<Rigidbody>().AddForce(g.transform.forward*bulletSpeed);
     }
 }
