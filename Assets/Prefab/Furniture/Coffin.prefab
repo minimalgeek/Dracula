@@ -10,8 +10,6 @@ GameObject:
   - 4: {fileID: 459788}
   - 33: {fileID: 3313818}
   - 23: {fileID: 2309846}
-  - 54: {fileID: 5487130}
-  - 64: {fileID: 6457990}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -27,6 +25,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 488346}
+  - 54: {fileID: 5456038}
+  - 64: {fileID: 6407872}
   m_Layer: 0
   m_Name: Coffin
   m_TagString: Untagged
@@ -92,12 +92,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165982}
   m_Mesh: {fileID: 4300000, guid: 54eba16e1bf0dda4481855206b69951c, type: 3}
---- !u!54 &5487130
+--- !u!54 &5456038
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 165982}
+  m_GameObject: {fileID: 178194}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -107,12 +107,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6457990
+--- !u!64 &6407872
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 165982}
+  m_GameObject: {fileID: 178194}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1

@@ -185,12 +185,14 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 418464}
+  - 65: {fileID: 6537412}
+  - 54: {fileID: 5448328}
   m_Layer: 0
   m_Name: Floor_3X3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &147006
 GameObject:
@@ -958,6 +960,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168412}
   m_Mesh: {fileID: 4300000, guid: 826a7ff9d5edfc04ea9895e92d268393, type: 3}
+--- !u!54 &5448328
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139024}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &6537412
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139024}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 300, y: 6, z: 300}
+  m_Center: {x: 100, y: 3, z: 100}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
