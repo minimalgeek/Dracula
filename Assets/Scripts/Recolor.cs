@@ -7,19 +7,17 @@ public class Recolor : MonoBehaviour {
     public Color highLightColor;
 
   void Start()
-        {
+    {
      img=GetComponent<Image>();
     }
 
-    Color lastColor=Color.white;
-
-	public void HightLight() //tudom hogy elírtam,de akkor elvész a beállítás ha átírom :D
+	public void HighLight() 
     {
         img.color = highLightColor;
     }
 
     public void StopHightLight()
     {
-        img.color = lastColor;
+        img.color = Color.white;
     }
 }

@@ -12,8 +12,4 @@ public class FromMover : MonoBehaviour {
         iTween.MoveFrom(gameObject, iTween.Hash(axis, distance, "time", moveTime, "easetype", "easeInQuart"));
     }
 
-    void Update()
-    {
-
-    }
 }

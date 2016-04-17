@@ -23,6 +23,11 @@ public class MovementController : MonoBehaviour
         {
             enable = true;
         }
+        if (anim.GetCurrentAnimatorStateInfo(0).IsTag("Stop"))
+        {
+            enable = false;
+        }
+
         if (enable)
         {
             //if (Input.GetKey(KeyCode.W))
@@ -94,14 +99,10 @@ public class MovementController : MonoBehaviour
                 {
                     transform.GetChild(0).localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 }
-
+               
             }
             moveDirection.y -= gravity * Time.deltaTime;
-                cc.Move(moveDirection * Time.deltaTime);
-
-                
-              
-            
+            cc.Move(moveDirection * Time.deltaTime);
         }
     }
 }

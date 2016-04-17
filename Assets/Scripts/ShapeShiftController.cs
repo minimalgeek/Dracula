@@ -1,12 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
+//mixamo
 public class ShapeShiftController : MonoBehaviour {
 
     public GameObject shapePanel;
     public enum Shapes {Shape1, Shape2, Shape3, Shape4, Shape5, Shape6};
-    Shapes lastShape;
     Shapes wantedShape=Shapes.Shape1;
+    Shapes currentShape = Shapes.Shape1;
+    public int shapeShiftCost=1;
+    public int maxMana=12;
+    public Image[] icons;
+    public Color highLightColor;
+    public GameObject[] shapes;
+    public GameObject effect;
+
 
 	void Update () {
         if (Input.GetButtonDown("Fire2"))
@@ -22,24 +30,35 @@ public class ShapeShiftController : MonoBehaviour {
         }
     }
 
-    public void SetWantedShape(int n)
+    public void SelectShape(int n)
     {
-        lastShape = wantedShape;
+        currentShape = wantedShape;
+
         wantedShape = (Shapes)n;
 
-        foreach (Recolor rc in shapePanel.GetComponentsInChildren<Recolor>())
-        {
-            rc.StopHightLight();
-        }     
+        icons[n].color = highLightColor;
     }
 
-    public void KeepShape()
+    public void UnSelectShape(int n)
     {
-        wantedShape = lastShape;
+        icons[n].color = Color.white;
+        wantedShape = currentShape;
     }
 
     void ShapeShift()
     {
-        gameObject.layer=LayerMask.NameToLayer(wantedShape.ToString());
+        if (wantedShape != currentShape)
+        {
+            if (maxMana >= shapeShiftCost)
+            {
+                gameObject.layer = LayerMask.NameToLayer(wantedShape.ToString());
+                shapes[(int)wantedShape].SetActive(true);
+                shapes[(int)currentShape].SetActive(false);
+                if (effect!=null)
+                {
+                    Instantiate(effect, transform.position, transform.rotation);
+                }
+            }
+        }
     }
 }
