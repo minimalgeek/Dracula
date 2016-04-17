@@ -13,6 +13,6 @@ public class Spitter : MonoBehaviour {
 	
     public void Fire()
     {
-       GameObject g= Instantiate(bullet, spawnPoint.position, spawnPoint.rotation)as GameObject;
+       Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
     }
 }
