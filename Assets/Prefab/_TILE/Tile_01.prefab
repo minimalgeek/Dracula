@@ -15994,8 +15994,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 155208, guid: 702d1ad06f3e2c24193a696f180e6c95, type: 2}
-  bulletSpeed: 200
-  cooldown: 3
   spawnPoint: {fileID: 459924}
 --- !u!114 &11421084
 MonoBehaviour:
@@ -16086,8 +16084,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 155208, guid: 702d1ad06f3e2c24193a696f180e6c95, type: 2}
-  bulletSpeed: 200
-  cooldown: 3
   spawnPoint: {fileID: 494188}
 --- !u!114 &11435494
 MonoBehaviour:
@@ -16125,8 +16121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 155208, guid: 702d1ad06f3e2c24193a696f180e6c95, type: 2}
-  bulletSpeed: 200
-  cooldown: 3
   spawnPoint: {fileID: 407068}
 --- !u!114 &11445924
 MonoBehaviour:
@@ -16256,8 +16250,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 155208, guid: 702d1ad06f3e2c24193a696f180e6c95, type: 2}
-  bulletSpeed: 200
-  cooldown: 3
   spawnPoint: {fileID: 459964}
 --- !u!114 &11469316
 MonoBehaviour:
@@ -16323,8 +16315,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 155208, guid: 702d1ad06f3e2c24193a696f180e6c95, type: 2}
-  bulletSpeed: 200
-  cooldown: 3
   spawnPoint: {fileID: 497928}
 --- !u!114 &11486650
 MonoBehaviour:
@@ -16378,8 +16368,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 155208, guid: 702d1ad06f3e2c24193a696f180e6c95, type: 2}
-  bulletSpeed: 200
-  cooldown: 3
   spawnPoint: {fileID: 403066}
 --- !u!114 &11493814
 MonoBehaviour:
