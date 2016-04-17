@@ -26,8 +26,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 453056}
   - 114: {fileID: 11476750}
-  - 114: {fileID: 11401590}
   - 65: {fileID: 6557204}
+  - 114: {fileID: 11466718}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -75,7 +75,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171638}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 100, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 497412}
@@ -209,7 +209,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 100, y: 100, z: 6}
   m_Center: {x: 0, y: 50, z: 0}
---- !u!114 &11401590
+--- !u!114 &11466718
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -217,9 +217,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 160018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 3
 --- !u!114 &11476750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -232,8 +233,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTime: 0.5
-  axis: 2
-  distance: 59
+  axis: 1
+  distance: -60
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

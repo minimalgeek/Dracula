@@ -19,6 +19,9 @@ public class Trap : MonoBehaviour {
 
     void OnTriggerEnter(Collider c)
     {
-        c.GetComponent<Health>().DamageTaken(damage);
+        if (c.gameObject.tag == "Player")
+        {
+            c.GetComponent<Health>().DamageTaken(damage);
+        }
     }
 }

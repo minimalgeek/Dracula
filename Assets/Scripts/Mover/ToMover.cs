@@ -13,7 +13,7 @@ public class ToMover : MonoBehaviour {
     public float distance;
     
 	void Start () {
-        iTween.MoveTo(gameObject, iTween.Hash(axis.ToString(), distance, "loopType", "pingPong", "time", moveTime));
+        iTween.MoveBy(gameObject, iTween.Hash(axis.ToString(), distance, "loopType", "pingPong", "time", moveTime));
     }
 
     void Update () {

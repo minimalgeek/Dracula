@@ -8,7 +8,7 @@ public class StickMover : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Destroy(this.gameObject, speedInTime);
-        iTween.MoveBy(this.gameObject, iTween.Hash("y", 800, "easetype", "easeOutQuad", "time", speedInTime));
+        iTween.MoveBy(this.gameObject, iTween.Hash("y", 1600, "easetype", "easeOutQuad", "time", speedInTime));
     }
 	
 	void Update () {
