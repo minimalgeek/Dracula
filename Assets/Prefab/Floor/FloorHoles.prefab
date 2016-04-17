@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 482996}
   - 114: {fileID: 11421118}
   - 65: {fileID: 6523018}
-  - 114: {fileID: 11447774}
+  - 114: {fileID: 11434184}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -239,7 +239,7 @@ MonoBehaviour:
   moveTime: 0.5
   axis: 1
   distance: -60
---- !u!114 &11447774
+--- !u!114 &11434184
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -247,9 +247,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 107596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 4
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -588,8 +588,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400012}
   - 114: {fileID: 11476190}
-  - 114: {fileID: 11484484}
   - 65: {fileID: 6513544}
+  - 114: {fileID: 11456318}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -685,8 +685,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 437792}
   - 114: {fileID: 11421672}
-  - 114: {fileID: 11452722}
   - 65: {fileID: 6581034}
+  - 114: {fileID: 11423346}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -855,7 +855,7 @@ GameObject:
   - 4: {fileID: 424392}
   - 114: {fileID: 11413516}
   - 65: {fileID: 6591698}
-  - 114: {fileID: 11457086}
+  - 114: {fileID: 11435494}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -1040,7 +1040,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 408184}
   - 65: {fileID: 6507280}
-  - 114: {fileID: 11454038}
+  - 114: {fileID: 11421084}
   m_Layer: 0
   m_Name: Killer
   m_TagString: Untagged
@@ -1091,8 +1091,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 490542}
   - 114: {fileID: 11474254}
-  - 114: {fileID: 11478628}
   - 65: {fileID: 6555244}
+  - 114: {fileID: 11406412}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -1514,8 +1514,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 418560}
   - 114: {fileID: 11406132}
-  - 114: {fileID: 11422076}
   - 65: {fileID: 6558854}
+  - 114: {fileID: 11445924}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -1807,7 +1807,7 @@ GameObject:
   - 4: {fileID: 427184}
   - 114: {fileID: 11450326}
   - 65: {fileID: 6570552}
-  - 114: {fileID: 11435450}
+  - 114: {fileID: 11454000}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -2258,8 +2258,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 446520}
   - 114: {fileID: 11411040}
-  - 114: {fileID: 11463848}
   - 65: {fileID: 6523622}
+  - 114: {fileID: 11478524}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -2468,8 +2468,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 418668}
   - 114: {fileID: 11486650}
-  - 114: {fileID: 11408712}
   - 65: {fileID: 6562350}
+  - 114: {fileID: 11469316}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -3429,7 +3429,7 @@ GameObject:
   - 4: {fileID: 448520}
   - 114: {fileID: 11447076}
   - 65: {fileID: 6584750}
-  - 114: {fileID: 11494320}
+  - 114: {fileID: 11493884}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -3826,23 +3826,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &177494
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 437662}
-  - 33: {fileID: 3393796}
-  - 23: {fileID: 2351824}
-  m_Layer: 0
-  m_Name: default
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &177538
 GameObject:
   m_ObjectHideFlags: 1
@@ -4052,8 +4035,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 462980}
   - 114: {fileID: 11466804}
-  - 114: {fileID: 11489102}
   - 65: {fileID: 6569680}
+  - 114: {fileID: 11487450}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -4331,8 +4314,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 406532}
   - 114: {fileID: 11415650}
-  - 114: {fileID: 11486064}
   - 65: {fileID: 6503810}
+  - 114: {fileID: 11443386}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -4663,7 +4646,7 @@ GameObject:
   - 4: {fileID: 458024}
   - 54: {fileID: 5478588}
   - 65: {fileID: 6592598}
-  - 114: {fileID: 11459756}
+  - 114: {fileID: 11431276}
   m_Layer: 0
   m_Name: FirePlace
   m_TagString: Untagged
@@ -4761,8 +4744,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 464520}
   - 114: {fileID: 11425242}
-  - 114: {fileID: 11404364}
   - 65: {fileID: 6572642}
+  - 114: {fileID: 11448322}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -4873,8 +4856,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 467160}
   - 114: {fileID: 11491644}
-  - 114: {fileID: 11469250}
   - 65: {fileID: 6518700}
+  - 114: {fileID: 11493814}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -6479,18 +6462,6 @@ Transform:
   m_Children:
   - {fileID: 453728}
   m_Father: {fileID: 487284}
-  m_RootOrder: 0
---- !u!4 &437662
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 177494}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 495120}
   m_RootOrder: 0
 --- !u!4 &437792
 Transform:
@@ -8923,8 +8894,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 437662}
+  m_Children: []
   m_Father: {fileID: 490758}
   m_RootOrder: 0
 --- !u!4 &496778
@@ -10631,32 +10601,6 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 192270}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 5d1554528540c3a48b55469355a23168, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!23 &2351824
-MeshRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 177494}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -13278,13 +13222,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134238}
   m_Mesh: {fileID: 4300000, guid: 826a7ff9d5edfc04ea9895e92d268393, type: 3}
---- !u!33 &3393796
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 177494}
-  m_Mesh: {fileID: 4300000, guid: 826a7ff9d5edfc04ea9895e92d268393, type: 3}
 --- !u!33 &3394154
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -14888,17 +14825,6 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
---- !u!114 &11404364
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11406132
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14913,17 +14839,18 @@ MonoBehaviour:
   moveTime: 0.5
   axis: 1
   distance: -59
---- !u!114 &11408712
+--- !u!114 &11406412
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147654}
+  m_GameObject: {fileID: 121426}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 2
 --- !u!114 &11411040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14992,6 +14919,18 @@ MonoBehaviour:
   bulletSpeed: 200
   cooldown: 3
   spawnPoint: {fileID: 459924}
+--- !u!114 &11421084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
 --- !u!114 &11421672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15006,17 +14945,18 @@ MonoBehaviour:
   moveTime: 0.5
   axis: 1
   distance: -60
---- !u!114 &11422076
+--- !u!114 &11423346
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130750}
+  m_GameObject: {fileID: 114038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 3
 --- !u!114 &11425242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15044,6 +14984,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shakeDistance: 5
   shakeTime: 0.7
+--- !u!114 &11431276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 3
 --- !u!114 &11433438
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15059,17 +15011,30 @@ MonoBehaviour:
   bulletSpeed: 200
   cooldown: 3
   spawnPoint: {fileID: 494188}
---- !u!114 &11435450
+--- !u!114 &11435494
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136580}
+  m_GameObject: {fileID: 116244}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 4
+--- !u!114 &11443386
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 186982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 3
 --- !u!114 &11444150
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15085,6 +15050,18 @@ MonoBehaviour:
   bulletSpeed: 200
   cooldown: 3
   spawnPoint: {fileID: 407068}
+--- !u!114 &11445924
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
 --- !u!114 &11447076
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15099,6 +15076,18 @@ MonoBehaviour:
   moveTime: 0.5
   axis: 1
   distance: -60
+--- !u!114 &11448322
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 3
 --- !u!114 &11450326
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15126,61 +15115,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shakeDistance: 5
   shakeTime: 0.7
---- !u!114 &11452722
+--- !u!114 &11454000
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114038}
+  m_GameObject: {fileID: 136580}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11454038
+  damage: 4
+--- !u!114 &11456318
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 120994}
+  m_GameObject: {fileID: 111274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11457086
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 116244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11459756
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11463848
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 144424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  damage: 3
 --- !u!114 &11466804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15223,17 +15181,18 @@ MonoBehaviour:
   bulletSpeed: 200
   cooldown: 3
   spawnPoint: {fileID: 459964}
---- !u!114 &11469250
+--- !u!114 &11469316
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 196056}
+  m_GameObject: {fileID: 147654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 2
 --- !u!114 &11474254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15262,17 +15221,18 @@ MonoBehaviour:
   moveTime: 0.5
   axis: 1
   distance: -59
---- !u!114 &11478628
+--- !u!114 &11478524
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 121426}
+  m_GameObject: {fileID: 144424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 3
 --- !u!114 &11481706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15288,28 +15248,6 @@ MonoBehaviour:
   bulletSpeed: 200
   cooldown: 3
   spawnPoint: {fileID: 497928}
---- !u!114 &11484484
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 111274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11486064
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11486650
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15324,7 +15262,7 @@ MonoBehaviour:
   moveTime: 0.5
   axis: 1
   distance: -59
---- !u!114 &11489102
+--- !u!114 &11487450
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -15332,9 +15270,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 181448}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 2
 --- !u!114 &11491644
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15364,7 +15303,19 @@ MonoBehaviour:
   bulletSpeed: 200
   cooldown: 3
   spawnPoint: {fileID: 403066}
---- !u!114 &11494320
+--- !u!114 &11493814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
+--- !u!114 &11493884
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -15372,9 +15323,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 166130}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 4
 --- !u!114 &11494344
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -92,8 +92,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 411742}
   - 114: {fileID: 11477900}
-  - 114: {fileID: 11485906}
   - 65: {fileID: 6578392}
+  - 114: {fileID: 11488036}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -160,8 +160,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 499980}
   - 114: {fileID: 11443976}
-  - 114: {fileID: 11466344}
   - 65: {fileID: 6561342}
+  - 114: {fileID: 11423484}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -807,6 +807,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 100, y: 100, z: 6}
   m_Center: {x: 0, y: 50, z: 0}
+--- !u!114 &11423484
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
 --- !u!114 &11443976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -821,17 +833,6 @@ MonoBehaviour:
   moveTime: 0.5
   axis: 1
   distance: -59
---- !u!114 &11466344
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 175536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11477900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -846,7 +847,7 @@ MonoBehaviour:
   moveTime: 0.5
   axis: 1
   distance: -59
---- !u!114 &11485906
+--- !u!114 &11488036
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -854,9 +855,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 153432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -26,8 +26,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 453056}
   - 114: {fileID: 11476750}
-  - 114: {fileID: 11401590}
   - 65: {fileID: 6557204}
+  - 114: {fileID: 11466718}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -209,7 +209,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 100, y: 100, z: 6}
   m_Center: {x: 0, y: 50, z: 0}
---- !u!114 &11401590
+--- !u!114 &11466718
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -217,9 +217,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 160018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 3
 --- !u!114 &11476750
 MonoBehaviour:
   m_ObjectHideFlags: 1

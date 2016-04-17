@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 450672}
   - 114: {fileID: 11486598}
-  - 114: {fileID: 11410242}
   - 65: {fileID: 6507778}
+  - 114: {fileID: 11426298}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -110,8 +110,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 411742}
   - 114: {fileID: 11477900}
-  - 114: {fileID: 11485906}
   - 65: {fileID: 6578392}
+  - 114: {fileID: 11479618}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -144,8 +144,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 471894}
   - 114: {fileID: 11409396}
-  - 114: {fileID: 11471900}
   - 65: {fileID: 6560894}
+  - 114: {fileID: 11409906}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -228,8 +228,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 499980}
   - 114: {fileID: 11443976}
-  - 114: {fileID: 11466344}
   - 65: {fileID: 6561342}
+  - 114: {fileID: 11424446}
   m_Layer: 0
   m_Name: basement_holes_spikes
   m_TagString: Untagged
@@ -1001,7 +1001,31 @@ MonoBehaviour:
   moveTime: 0.5
   axis: 1
   distance: -59
---- !u!114 &11410242
+--- !u!114 &11409906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
+--- !u!114 &11424446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
+--- !u!114 &11426298
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1009,9 +1033,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 111966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 2
 --- !u!114 &11443976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1026,28 +1051,6 @@ MonoBehaviour:
   moveTime: 0.5
   axis: 1
   distance: -59
---- !u!114 &11466344
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 175536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11471900
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 154998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11477900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1062,7 +1065,7 @@ MonoBehaviour:
   moveTime: 0.5
   axis: 1
   distance: -59
---- !u!114 &11485906
+--- !u!114 &11479618
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1070,9 +1073,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 153432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 2
 --- !u!114 &11486598
 MonoBehaviour:
   m_ObjectHideFlags: 1

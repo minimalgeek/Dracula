@@ -27,7 +27,7 @@ GameObject:
   - 4: {fileID: 425328}
   - 65: {fileID: 6518426}
   - 114: {fileID: 11400780}
-  - 114: {fileID: 11488038}
+  - 114: {fileID: 11482206}
   m_Layer: 0
   m_Name: Stick
   m_TagString: Untagged
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedInTime: 3
---- !u!114 &11488038
+--- !u!114 &11482206
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -125,9 +125,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 155208}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9764a3acc8d7cd4dbe7233e298b3c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: fa0bcd4d31ce56140a6cc740d0ae0e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
