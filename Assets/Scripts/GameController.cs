@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour {
    // public List<Collectable> tasksList; 
     public static GameController instance;
     public GameObject gameOverPanel;
+    public GameObject pausePanel;
 
     void Awake()
     {
@@ -39,5 +40,28 @@ public class GameController : MonoBehaviour {
    void GameOver()
     {
         gameOverPanel.SetActive(true);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Pause();
+        }
+    }
+
+    public void Pause()
+    {
+        pausePanel.SetActive(true);
+        Time.timeScale = 0;
+    }
+    public void Resume()
+    {
+        pausePanel.SetActive(false);
+        Time.timeScale = 1;
+    }
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }
