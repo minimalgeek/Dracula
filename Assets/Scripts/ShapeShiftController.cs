@@ -21,6 +21,12 @@ public class ShapeShiftController : MonoBehaviour {
     public GameObject[] characters;
     public GameObject effect;
 
+    private PlayerController playerController;
+
+    void Start()
+    {
+        playerController = GetComponent<PlayerController>();
+    }
 
 	void Update () {
         if (Input.GetButtonDown("Fire2"))
@@ -71,6 +77,7 @@ public class ShapeShiftController : MonoBehaviour {
                 {
                     Instantiate(effect, transform.position, transform.rotation);
                 }
+                playerController.FindActiveAnimator();
                 currentShape = wantedShape;
             }
         }

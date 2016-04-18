@@ -17,9 +17,14 @@ public class PlayerController : MonoBehaviour
     {
         myRigidBody = GetComponent<Rigidbody>();
         shapeShiftController = GetComponent<ShapeShiftController>();
-        currentAnimator = GetComponentInChildren<Animator>(false);
+        FindActiveAnimator();
         currentAnimator.SetTrigger("GetUp");
-        Invoke("Enable", 6);
+        Invoke("Enable", 5);
+    }
+
+    public void FindActiveAnimator()
+    {
+        currentAnimator = GetComponentInChildren<Animator>(false);
     }
     
     public void Enable()
