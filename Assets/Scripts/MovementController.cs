@@ -15,22 +15,25 @@ public class MovementController : MonoBehaviour
     {
         cc = GetComponent<CharacterController>();
         ss = GetComponent<ShapeShiftController>();
+        anim = GetComponentInChildren<Animator>(false);
+        anim.SetTrigger("GetUp");
+        Invoke("Enable",6);
     }
-    bool enable = true;
+    bool enable = false;
+    public void Enable()
+    {
+        enable = true;
+    }
+
+    public void Disable()
+    {
+        enable = false;
+    }
     void Update()
     {
-        anim = GetComponentInChildren<Animator>(false);
-        //if (anim.GetCurrentAnimatorStateInfo(0).IsTag("Start"))
-        //{
-        //    enable = true;
-        //}
-        //if (anim.GetCurrentAnimatorStateInfo(0).IsTag("Stop"))
-        //{
-        //    enable = false;
-        //}
-
         if (enable)
         {
+            anim = GetComponentInChildren<Animator>(false);
             //if (Input.GetKey(KeyCode.W))
             //{
             //    cc.SimpleMove(transform.forward * speed*Time.deltaTime);

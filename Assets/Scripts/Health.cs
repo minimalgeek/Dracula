@@ -13,6 +13,7 @@ public class Health : MonoBehaviour {
         {
             GetComponentInChildren<Animator>().SetTrigger("Die");
             GameController.instance.StartGameOver();
+            GetComponent<MovementController>().Disable();
         }
     }
 
