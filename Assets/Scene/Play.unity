@@ -450,7 +450,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22485510, guid: 2b778dd6557c10c4e9565e77c574e5c9, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22485510, guid: 2b778dd6557c10c4e9565e77c574e5c9, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -929,10 +929,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1852751843}
-  - {fileID: 1260812073}
   - {fileID: 2007315647}
   - {fileID: 271240925}
+  - {fileID: 1260812073}
+  - {fileID: 1852751843}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
@@ -1029,7 +1029,7 @@ RectTransform:
   - {fileID: 320690786}
   - {fileID: 1567296229}
   m_Father: {fileID: 1206677715}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -0.00004005432, y: -0.000045776003}
@@ -1769,7 +1769,7 @@ RectTransform:
   - {fileID: 1075110795}
   - {fileID: 753580414}
   m_Father: {fileID: 1206677715}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1973,7 +1973,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22485510, guid: 2b778dd6557c10c4e9565e77c574e5c9, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22485510, guid: 2b778dd6557c10c4e9565e77c574e5c9, type: 2}
       propertyPath: m_AnchoredPosition.x
