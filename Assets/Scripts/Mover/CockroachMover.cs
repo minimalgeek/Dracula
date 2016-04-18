@@ -42,7 +42,12 @@ public class CockroachMover : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Player")
         {
-            Debug.Log("Player collided");
+            ShapeShiftController ssc = coll.GetComponent<ShapeShiftController>();
+            if (ssc&& ssc.currentShape== Shapes.Dracula)
+            {
+                coll.GetComponent<Health>().anim.SetTrigger("Take");
+                ssc.AddMana(4);
+            }
         }
     }
 

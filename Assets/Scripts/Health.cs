@@ -4,6 +4,12 @@ using System.Collections;
 public class Health : MonoBehaviour {
 
     public int health=3;
+    public Animator anim;
+
+    void Start()
+    {
+      anim=  GetComponentInChildren<Animator>();
+    }
 
 	public void DamageTaken(int dmg)
     {
@@ -12,7 +18,7 @@ public class Health : MonoBehaviour {
             health -= dmg;
             if (health <= 0)
             {
-                GetComponentInChildren<Animator>().SetTrigger("Die");
+                anim.SetTrigger("Die");
                 GameController.instance.StartGameOver();
                 GetComponent<PlayerController>().Disable();
                 GetComponent<ShapeShiftController>().Disable();

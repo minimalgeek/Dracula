@@ -14,12 +14,13 @@ public class ShapeShiftController : MonoBehaviour {
     public Shapes currentShape = Shapes.Dracula;
 
     public int shapeShiftCost=1;
-    public int maxMana=12;
+    public int maxMana=20;
     public int currentMana;
     public Image[] icons;
     public Color highLightColor;
     public GameObject[] characters;
     public GameObject effect;
+    public float timer=1;
 
     private PlayerController playerController;
 
@@ -38,6 +39,27 @@ public class ShapeShiftController : MonoBehaviour {
         {
             shapePanel.SetActive(false);
             Time.timeScale = 1;
+            ShapeShift();
+        }
+
+        if (currentShape != Shapes.Dracula && timer <= 0)
+        {
+            DrainMana();
+        }
+        timer -= Time.deltaTime;
+    }
+
+    void DrainMana()
+    {
+        if (currentMana>=1)
+        {
+            currentMana--;
+            timer = 1;
+        }
+        else
+        {
+            wantedShape = Shapes.Dracula;
+            currentMana = shapeShiftCost;
             ShapeShift();
         }
     }
@@ -68,7 +90,6 @@ public class ShapeShiftController : MonoBehaviour {
         {
             if (currentMana >= shapeShiftCost)
             {
-               
                 currentMana -= shapeShiftCost;
                 gameObject.layer = LayerMask.NameToLayer(wantedShape.ToString());
                 characters[(int)wantedShape].SetActive(true);
@@ -79,6 +100,7 @@ public class ShapeShiftController : MonoBehaviour {
                 }
                 playerController.FindActiveAnimator();
                 currentShape = wantedShape;
+                timer = 1;
             }
         }
     }
