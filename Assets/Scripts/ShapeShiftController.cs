@@ -21,12 +21,14 @@ public class ShapeShiftController : MonoBehaviour {
     public GameObject[] characters;
     public GameObject effect;
     public float timer=1;
+    public Bar manaBar;
 
     private PlayerController playerController;
 
     void Start()
     {
         playerController = GetComponent<PlayerController>();
+        manaBar.Calculate(maxMana, currentMana);
     }
 
 	void Update () {
@@ -55,6 +57,7 @@ public class ShapeShiftController : MonoBehaviour {
         {
             currentMana--;
             timer = 1;
+            manaBar.Calculate(maxMana, currentMana);
         }
         else
         {
@@ -90,6 +93,7 @@ public class ShapeShiftController : MonoBehaviour {
         {
             if (currentMana >= shapeShiftCost)
             {
+                
                 currentMana -= shapeShiftCost;
                 gameObject.layer = LayerMask.NameToLayer(wantedShape.ToString());
                 characters[(int)wantedShape].SetActive(true);
@@ -101,12 +105,14 @@ public class ShapeShiftController : MonoBehaviour {
                 playerController.FindActiveAnimator();
                 currentShape = wantedShape;
                 timer = 1;
+                manaBar.Calculate(maxMana, currentMana);
             }
         }
     }
     public void AddMana(int mana)
     {
         currentMana += mana;
+        manaBar.Calculate(maxMana, currentMana);
         if (currentMana>maxMana)
         {
             currentMana = maxMana;
