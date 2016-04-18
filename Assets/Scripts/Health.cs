@@ -14,6 +14,9 @@ public class Health : MonoBehaviour {
             GetComponentInChildren<Animator>().SetTrigger("Die");
             GameController.instance.StartGameOver();
             GetComponent<MovementController>().Disable();
+            GetComponent<ShapeShiftController>().enabled = false;
+            GetComponent<Collider>().enabled = false;
+            enabled = false;
         }
     }
 

@@ -34,7 +34,7 @@ public class GameController : MonoBehaviour {
     public void StartGameOver()
     {
         Invoke("GameOver", 5);
-        Time.timeScale = 0.1f;
+        Time.timeScale = 0.5f;
     }
 
    void GameOver()
