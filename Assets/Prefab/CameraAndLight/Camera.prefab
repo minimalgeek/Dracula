@@ -12,6 +12,7 @@ GameObject:
   - 124: {fileID: 12468692}
   - 92: {fileID: 9278402}
   - 81: {fileID: 8147520}
+  - 114: {fileID: 11455398}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -25,8 +26,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174360}
-  m_LocalRotation: {x: 0.22233292, y: -0.4339832, z: 0.1116508, w: 0.8658873}
-  m_LocalPosition: {x: 353.23312, y: 166.41702, z: 109.694565}
+  m_LocalRotation: {x: 0.25274542, y: -0.35518593, z: 0.10032977, w: 0.8943695}
+  m_LocalPosition: {x: 800.52344, y: 345.52487, z: -97.10092}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,6 +80,19 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174360}
   m_Enabled: 1
+--- !u!114 &11455398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 174360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d3b47c9c1fc348c38adad591722a502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetToFollow: {fileID: 0}
+  dampTime: 2
 --- !u!124 &12468692
 Behaviour:
   m_ObjectHideFlags: 1
