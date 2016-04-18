@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bugToInitialize: {fileID: 155134, guid: 236cbc36690bf064aa9aa4a3b348bbc7, type: 2}
-  generateTime: 2
+  generateTime: 3
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
