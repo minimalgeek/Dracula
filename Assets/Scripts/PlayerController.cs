@@ -2,6 +2,11 @@
 using System.Collections;
 using System;
 
+public enum AnimatorTrigger
+{
+    Jump, Die, Take, GetUp, Hit
+}
+
 public class PlayerController : MonoBehaviour
 {
     public float speed = 30f;
@@ -18,7 +23,7 @@ public class PlayerController : MonoBehaviour
         myRigidBody = GetComponent<Rigidbody>();
         shapeShiftController = GetComponent<ShapeShiftController>();
         FindActiveAnimator();
-        currentAnimator.SetTrigger("GetUp");
+        Animate(AnimatorTrigger.GetUp);
         Invoke("Enable", 5);
     }
 
@@ -56,12 +61,37 @@ public class PlayerController : MonoBehaviour
             if (Input.GetButton("Jump") && (Mathf.Abs(myRigidBody.velocity.y) < verticalVelocityThreshold))
             {
                 myRigidBody.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
-                currentAnimator.SetTrigger("Jump");
+                Animate(AnimatorTrigger.Jump);
             }
 
             currentAnimator.SetFloat("Speed", myRigidBody.velocity.magnitude);
         }
+        LimitPosition();
     }
 
-    
+    public void Animate(AnimatorTrigger trigger)
+    {
+        currentAnimator.SetTrigger(trigger.ToString());
+    }
+
+    private void LimitPosition()
+    {
+        Vector3 newPosition = transform.position;
+        if (newPosition.z < 0)
+        {
+            newPosition.z = 0;
+        }
+
+        if (newPosition.x < 0)
+        {
+            newPosition.x = 0;
+        }
+
+        if (newPosition.y > 200)
+        {
+            newPosition.y = 200;
+        }
+
+        transform.position = newPosition;
+    }
 }
