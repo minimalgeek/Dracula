@@ -1,13 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-//mixamo
+
+public enum Shapes {
+    Dracula, Skeleton, Bat, Gargoyle
+};
+
 public class ShapeShiftController : MonoBehaviour {
 
     public GameObject shapePanel;
-    public enum Shapes {Shape1, Shape2, Shape3, Shape4, Shape5, Shape6};
-    Shapes wantedShape=Shapes.Shape1;
-    public Shapes currentShape = Shapes.Shape1;
+    
+    Shapes wantedShape=Shapes.Dracula;
+    public Shapes currentShape = Shapes.Dracula;
+
     public int shapeShiftCost=1;
     public int maxMana=12;
     public int currentMana;
