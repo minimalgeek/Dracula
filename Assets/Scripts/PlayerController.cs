@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
             lookAt = Vector3.Lerp(transform.position, lookAt, tilt * Time.deltaTime);
             transform.LookAt(lookAt);
 
-            if (Input.GetButton("Jump") && (Mathf.Abs(myRigidBody.velocity.y) < verticalVelocityThreshold))
+            if (Input.GetButtonDown("Jump") && (Mathf.Abs(myRigidBody.velocity.y) < verticalVelocityThreshold))
             {
                 myRigidBody.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
                 Animate(AnimatorTrigger.Jump);

@@ -3627,6 +3627,7 @@ MonoBehaviour:
   - {fileID: 127170}
   - {fileID: 190756}
   effect: {fileID: 195550, guid: c9ab1327a6c995b4ba14f83bdb152933, type: 2}
+  timer: 1
 --- !u!114 &11426098
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3653,6 +3654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  anim: {fileID: 0}
 --- !u!114 &11468468
 MonoBehaviour:
   m_ObjectHideFlags: 1
