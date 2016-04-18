@@ -23,6 +23,7 @@ public class MovementController : MonoBehaviour
     public void Enable()
     {
         enable = true;
+        GetComponent<ShapeShiftController>().enabled = true;
     }
 
     public void Disable()
@@ -72,35 +73,35 @@ public class MovementController : MonoBehaviour
 
                 if (horizontal > 0 && vertical < 0) //DS
                 {
-                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, -45, 0));
+                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(ss.characters[(int)ss.currentShape].transform.rotation.eulerAngles.x, -45, 0));
                 }
                 else if (horizontal > 0 && vertical > 0) //DW
                 {
-                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, 225, 0));
+                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(ss.characters[(int)ss.currentShape].transform.eulerAngles.x, 225, 0));
                 }
                 else if (horizontal > 0 && vertical == 0) //A
                 {
-                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, -90, 0));
+                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(ss.characters[(int)ss.currentShape].transform.eulerAngles.x, -90, 0));
                 }
                 else if (horizontal < 0 && vertical < 0) //AS
                 {
-                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, 45, 0));
+                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(ss.characters[(int)ss.currentShape].transform.eulerAngles.x, 45, 0));
                 }
                 else if (horizontal < 0 && vertical > 0) //AW
                 {
-                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, 135, 0));
+                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(ss.characters[(int)ss.currentShape].transform.eulerAngles.x, 135, 0));
                 }
                 else if (horizontal < 0 && vertical == 0) //D
                 {
-                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, 90, 0));
+                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(ss.characters[(int)ss.currentShape].transform.eulerAngles.x, 90, 0));
                 }
                 else if (horizontal == 0 && vertical > 0)//W
                 {
-                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, 180, 0));
+                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(ss.characters[(int)ss.currentShape].transform.eulerAngles.x, 180, 0));
                 }
-                else//S
+                else if(horizontal==0 && vertical<0)
                 {
-                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, 0, 0));
+                    ss.characters[(int)ss.currentShape].transform.localRotation = Quaternion.Euler(new Vector3(ss.characters[(int)ss.currentShape].transform.eulerAngles.x, 0, 0));
                 }
             }
             moveDirection.y -= gravity * Time.deltaTime;
