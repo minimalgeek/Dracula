@@ -144,18 +144,6 @@ Prefab:
       propertyPath: icons.Array.data[3]
       value: 
       objectReference: {fileID: 29734905}
-    - target: {fileID: 11422396, guid: 155e91b3587dd9d4595a2d1a4914aa4d, type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11460882, guid: 155e91b3587dd9d4595a2d1a4914aa4d, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 14354510, guid: 155e91b3587dd9d4595a2d1a4914aa4d, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 155e91b3587dd9d4595a2d1a4914aa4d, type: 2}
   m_IsPrefabParent: 0
@@ -274,40 +262,6 @@ RectTransform:
   m_AnchoredPosition: {x: 340.40005, y: -256.67}
   m_SizeDelta: {x: 341.5, y: 256.35}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &298706545 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 171502, guid: 155e91b3587dd9d4595a2d1a4914aa4d, type: 2}
-  m_PrefabInternal: {fileID: 26722545}
---- !u!54 &298706546
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 298706545}
-  serializedVersion: 2
-  m_Mass: 2
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 0
---- !u!114 &298706547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 298706545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ca1bd6f956c7ea4b9497638edbc6429, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 60
-  tilt: 0.1
-  jumpForce: 500
-  verticalVelocityThreshold: 0.5
 --- !u!1 &320690785
 GameObject:
   m_ObjectHideFlags: 0

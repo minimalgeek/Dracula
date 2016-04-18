@@ -36,6 +36,11 @@ public class ShapeShiftController : MonoBehaviour {
         }
     }
 
+    public void Disable()
+    {
+        enabled = false;
+    }
+
     public void SelectShape(int n)
     {
         currentShape = wantedShape;

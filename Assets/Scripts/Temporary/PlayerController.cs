@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody myRigidBody;
     private ShapeShiftController shapeShiftController;
     private Animator currentAnimator;
+    private bool enabledToMoveAndShift = false;
 
     void Start()
     {
@@ -18,26 +19,42 @@ public class PlayerController : MonoBehaviour
         shapeShiftController = GetComponent<ShapeShiftController>();
         currentAnimator = GetComponentInChildren<Animator>(false);
         currentAnimator.SetTrigger("GetUp");
+        Invoke("Enable", 6);
+    }
+    
+    public void Enable()
+    {
+        enabledToMoveAndShift = true;
+    }
+
+    public void Disable()
+    {
+        enabledToMoveAndShift = false;
     }
 
     void FixedUpdate()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        myRigidBody.velocity = movement * speed;
-
-        Vector3 lookAt = transform.position;
-        lookAt.x += myRigidBody.velocity.x;
-        lookAt.z += myRigidBody.velocity.z;
-        lookAt = Vector3.Lerp(transform.position, lookAt, tilt * Time.deltaTime);
-        transform.LookAt(lookAt);
-
-        if (Input.GetButton("Jump") && (Mathf.Abs(myRigidBody.velocity.y) < verticalVelocityThreshold))
+        if (enabledToMoveAndShift)
         {
-            myRigidBody.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
-            currentAnimator.SetTrigger("Jump");
+            float moveHorizontal = Input.GetAxis("Horizontal");
+            float moveVertical = Input.GetAxis("Vertical");
+
+            Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+            myRigidBody.velocity = movement * speed;
+
+            Vector3 lookAt = transform.position;
+            lookAt.x += myRigidBody.velocity.x;
+            lookAt.z += myRigidBody.velocity.z;
+            lookAt = Vector3.Lerp(transform.position, lookAt, tilt * Time.deltaTime);
+            transform.LookAt(lookAt);
+
+            if (Input.GetButton("Jump") && (Mathf.Abs(myRigidBody.velocity.y) < verticalVelocityThreshold))
+            {
+                myRigidBody.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
+                currentAnimator.SetTrigger("Jump");
+            }
+
+            currentAnimator.SetFloat("Speed", myRigidBody.velocity.magnitude);
         }
     }
 
